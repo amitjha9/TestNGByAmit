@@ -29,3 +29,16 @@ Advantages
 7. Parallel Execution
 8. Rerun only failed test cases using failedTestNG.xml file
 
+
+Priority of Test in TestNG
+1. Normally if we don't define the priority at the test level , TestNG will pick the test in alphabetical order
+    and then execute it.
+
+2. We can set the priority at the test level so that a particular test will get executed based on the priority defined
+3. We use "Priority" keyword to set the priority of the test cases.
+
+Enable and Disable Test case in TestNG
+In TestNG if we don't want to run a particular test we can disable that test using below keyword
+1. Enable = false
+2. Enable = true (This is default from TestNG)
+
