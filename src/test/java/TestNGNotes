@@ -1,0 +1,21 @@
+TestNG: TestNG is a unit testing framework. (Testing new generation framework)
+Purpose:
+  1. TestNG is used to design your test cases in a proper manner or we can say in a systematic way.
+
+TestNG Annotations : Annotations in TestNG always starts with @ tag, and each annotations has to be associated with a
+Method at the class level in TestNG.
+
+Below are the preconditions annotations starting with @Before tag
+1. @BeforeSuite
+2. @BeforeTest
+3. @BeforeClass
+4. @BeforeMethod
+
+1. @Test - This annotation is used for executing a Test in TestNG
+
+Below are the post conditions annotations starting with @After tag
+1. @AfterSuite
+2. @AfterTest
+3. @AfterClass
+4. @AfterMethod
+
