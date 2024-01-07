@@ -5,6 +5,7 @@
         <classes>
             <class name="org.testng.FirstTestCase"/>
             <class name="org.testng.TestNGAnnotation"></class>
+            <class name="org.testng.OrangeHRMTest"></class>
         </classes>
     </test>
 </suite>

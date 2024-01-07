@@ -19,3 +19,13 @@ Below are the post conditions annotations starting with @After tag
 3. @AfterClass
 4. @AfterMethod
 
+Advantages
+1. HTML Report
+2. Different Annotations
+3. Priorities/Sequence your test cases according to your need
+4. Dependency Download automatically
+5. Grouping of the test cases as per the need
+6. Data Provider
+7. Parallel Execution
+8. Rerun only failed test cases using failedTestNG.xml file
+
