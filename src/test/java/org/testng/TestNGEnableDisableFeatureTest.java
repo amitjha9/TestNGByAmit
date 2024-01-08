@@ -10,7 +10,7 @@ public class TestNGEnableDisableFeatureTest {
     2. Enable = true (This is default from TestNG)
      */
 
-    @Test
+    @Test(priority = 1,groups = {"Sanity"})
     public void createEmployeeTest()
     {
         System.out.println("Employee Created");
@@ -22,13 +22,13 @@ public class TestNGEnableDisableFeatureTest {
         System.out.println("Employee Updated");
     }
 
-    @Test
+    @Test(groups = {"Regression"},priority = 2)
     public void deleteEmployee()
     {
         System.out.println("Employee Deleted");
     }
 
-    @Test
+    @Test(priority = 3,groups = {"Sanity"})
     public void searchEmployee()
     {
         System.out.println("Employee Searched");

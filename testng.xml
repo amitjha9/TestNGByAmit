@@ -1,11 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestNG Test Suite">
+<suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="/Users/amitkumarjha/Documents/Catalog_Project/TestNgByAmit">
         <classes>
-            <class name="org.testng.FirstTestCase"/>
-            <class name="org.testng.TestNGAnnotation"></class>
-            <class name="org.testng.OrangeHRMTest"></class>
+            <class name="org.testng.TestNGAlwaysRunPropertyTest">
+                <methods>
+                    <include name="loginIntoAppTest"/>
+                </methods>
+            </class>
+            <class name="org.testng.TestNGAnnotation">
+                <methods>
+                    <include name="googleTitleTest"/>
+                    <include name="addEmployee"/>
+                    <include name="searchEmployee"/>
+                    <include name="updateEmployee"/>
+                    <include name="deleteEmployee"/>
+                </methods>
+            </class>
+            <class name="org.testng.TestNGEnableDisableFeatureTest">
+                <methods>
+                    <include name="createEmployeeTest"/>
+                    <include name="updateEmployeeTest"/>
+                    <include name="deleteEmployee"/>
+                    <include name="searchEmployee"/>
+                </methods>
+            </class>
+            <class name="org.testng.TestNGPriorityFeatureTest">
+                <methods>
+                    <include name="googleTitleTest"/>
+                    <include name="googleLogoTest"/>
+                    <include name="gmailLinkCheckTest"/>
+                </methods>
+            </class>
+            <class name="org.testng.TestNgDependsOnFeatureTest">
+                <methods>
+                    <include name="loginTest"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

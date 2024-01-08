@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Grouping Test">
+    <test verbose="2" preserve-order="true" name="/Users/amitkumarjha/Documents/Catalog_Project/TestNgByAmit">
+        <groups>
+            <run>
+                <include name="Sanity"/>
+                <exclude name="Regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.testng.FirstTestCase"/>
+            <class name="org.testng.TestNGEnableDisableFeatureTest"></class>
+            <class name="org.testng.TestNGGroupingFeatureTest"></class>
+        </classes>
+    </test>
+</suite>

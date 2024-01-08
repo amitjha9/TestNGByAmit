@@ -26,13 +26,13 @@ public class OrangeHRMTest {
         driver.manage().deleteAllCookies();
     }
 
-    @Test
+    @Test(priority = 1)
     public void getPageTitleTest() {
         String pageTitle = driver.getTitle();
         Assert.assertEquals(pageTitle, "OrangeHRM");
     }
 
-    @Test
+    @Test(priority = 2)
     public void verifyLoginTest() {
         WebElement userName = driver.findElement(By.xpath("//input[@name=\"username\"]"));
         userName.sendKeys("Admin");
