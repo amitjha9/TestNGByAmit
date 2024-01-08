@@ -42,3 +42,8 @@ In TestNG if we don't want to run a particular test we can disable that test usi
 1. Enable = false
 2. Enable = true (This is default from TestNG)
 
+Data Provider:Data Providers are used for Data Driven testing , which means same test can be run through different sets of data.
+This is very powerful feature of TestNG and effectively used during the framework development
+
+A Data Provider is a method annotated with @DataProvider.
+
