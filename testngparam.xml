@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Parameter Test">
+
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.facebook.com/"/>
+    <test name="TestNG Param1 Testing">
+        <classes>
+            <class name="org.testng.TestNGParamTest"/>
+        </classes>
+    </test>
+
+    <parameter name="browser" value="safari"/>
+    <parameter name="url" value="https://www.facebook.com/"/>
+    <test name="TestNG Param2 Testing">
+        <classes>
+            <class name="org.testng.TestNGParamTest"/>
+        </classes>
+    </test>
+</suite>
