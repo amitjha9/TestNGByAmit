@@ -47,3 +47,17 @@ This is very powerful feature of TestNG and effectively used during the framewor
 
 A Data Provider is a method annotated with @DataProvider.
 
+Parallel Execution In TestNG
+->We can achieve parallel execution in TestNG at different level
+1. At method level, by providing the thread count value
+Thread Count : Thread count is nothing but an instance which will assign to one test.
+so example - if we give 3 thread count , then at a time 3 test case will get assigned and execute.
+<suite name="Grouping Test" parallel="methods" thread-count="3">
+
+2. At the class level
+<suite name="Grouping Test" parallel="classes" thread-count="3">
+
+3. At the test level
+<suite name="Grouping Test" parallel="tests" thread-count="3">
+
+

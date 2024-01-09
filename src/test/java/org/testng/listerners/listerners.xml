@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Listerners Test">
+    
+    <listeners>
+        <listener class-name="org.testng.listerners.TestNgListerners"/>
+    </listeners>
+    
+    <test name="TestNG Listerners Test">
+        <classes>
+            <class name="org.testng.listerners.TestNGListernersTest"/>
+            <methods>
+                <include name="createProduct"/>
+                <include name="reviewProduct"/>
+                <include name="publishProduct"/>
+                <include name="liveProduct"/>
+            </methods>
+        </classes>
+    </test>
+</suite>
