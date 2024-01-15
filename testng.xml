@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestNG Suite">
-    <test name="TestNG Complete Test Execution">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/amitkumarjha/Documents/Catalog_Project/TestNgByAmit">
         <classes>
+            <class name="org.testng.DataProviderAdditionTest">
+                <methods>
+                    <include name="addTest"/>
+                </methods>
+            </class>
+            <class name="org.testng.DataProviderTest">
+                <methods>
+                    <include name="printDetailTest"/>
+                </methods>
+            </class>
+            <class name="org.testng.OrangeHRMTest">
+                <methods>
+                    <include name="getPageTitleTest"/>
+                    <include name="verifyLoginTest"/>
+                </methods>
+            </class>
             <class name="org.testng.TestNGAlwaysRunPropertyTest">
                 <methods>
                     <include name="loginIntoAppTest"/>
@@ -19,10 +35,13 @@
             </class>
             <class name="org.testng.TestNGEnableDisableFeatureTest">
                 <methods>
-                    <include name="createEmployeeTest"/>
                     <include name="updateEmployeeTest"/>
-                    <include name="deleteEmployee"/>
-                    <include name="searchEmployee"/>
+                </methods>
+            </class>
+            <class name="org.testng.TestNGParamTest">
+                <methods>
+                    <include name="getfaceBookTitleTest"/>
+                    <include name="verifyLogoTest"/>
                 </methods>
             </class>
             <class name="org.testng.TestNGPriorityFeatureTest">
@@ -35,6 +54,29 @@
             <class name="org.testng.TestNgDependsOnFeatureTest">
                 <methods>
                     <include name="loginTest"/>
+                </methods>
+            </class>
+            <class name="org.testng.listerners.TakeScreenshotUsingTestNgListerners">
+                <methods>
+                    <include name="testGoogleTitleTest"/>
+                    <include name="testGoogleLinkTest"/>
+                    <include name="testGoogleLogoTest"/>
+                </methods>
+            </class>
+            <class name="org.testng.listerners.TestNGListernersTest">
+                <methods>
+                    <include name="createProduct"/>
+                    <include name="reviewProduct"/>
+                    <include name="publishProduct"/>
+                    <include name="liveProduct"/>
+                </methods>
+            </class>
+            <class name="org.testng.parallelExecution.TestNGParallelExecutionTest">
+                <methods>
+                    <include name="getGoogleTitleTest"/>
+                    <include name="getGoogleLogoTest"/>
+                    <include name="verifySearchFieldDisplayTest"/>
+                    <include name="verifySignInButtonDisplayTest"/>
                 </methods>
             </class>
         </classes>

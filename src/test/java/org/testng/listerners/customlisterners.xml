@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Custom Listerners Test">
+
+    <listeners>
+        <listener class-name="org.testng.listerners.CustomListernersTestNg"/>
+    </listeners>
+
+    <test name="TestNG Custom Listerners Test">
+        <classes>
+            <class name="org.testng.listerners.TakeScreenshotUsingTestNgListerners"/>
+            <methods>
+                <include name="testGoogleTitleTest"/>
+                <include name="testGoogleLinkTest"/>
+                <include name="testGoogleLogoTest"/>
+            </methods>
+        </classes>
+    </test>
+</suite>
