@@ -25,14 +25,15 @@ public class CustomListernersTestNg extends TakeScreenshotUsingTestNgListerners 
     {
         System.out.println("Test Failed -------------");
         int randomInt = generateRandomInt();
-        String fileName = "Test1"+randomInt+".jpg";
+
+        String screenshotName = result.getMethod().getMethodName()+randomInt+".jpg";
 
         String destinationPath = System.getProperty("user.dir");
         String destPath = destinationPath+"/screenshots/";
 
         TakesScreenshot ts = (TakesScreenshot) driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
-        File target = new File(destPath+fileName);
+        File target = new File(destPath+screenshotName);
         try {
             FileUtils.copyFile(source,target);
         } catch (IOException e) {
